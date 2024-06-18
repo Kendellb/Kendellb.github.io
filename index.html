@@ -60,6 +60,12 @@
             border: none;
             cursor: pointer;
         }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
     </style>
 </head>
 
@@ -69,8 +75,8 @@
         <img src="/img/IMG_0642.jpg" width="100" height="100" alt="Kendell Barry">
     </header>
 
-<section id="about">
-        <h1>About Me</h2>
+    <section id="about">
+        <h2>About Me</h2>
         <p>Hello, I'm Kendell Barry, a passionate and detail-oriented Computer Science student at Duquesne University. 
         Currently pursuing a Bachelor's in Science, I am expected to graduate in May 2024. My interests extend beyond 
         the academic and professional realm. I am an enthusiast in self-hosting applications and an active member of the Association 
@@ -80,40 +86,37 @@
     <section id="projects">
         <h2>Projects</h2>
         <a href="https://github.com/Kendellb/WebWatchTogether">WebWatchTogether</a>
-        <p> A P2P web app that uses WebRTC to watch videos together with your friends. This project was built using JavaScript for the backend 
-            and Html/Css for the front end.</p>
+        <p>A P2P web app that uses WebRTC to watch videos together with your friends. This project was built using JavaScript for the backend 
+            and HTML/CSS for the front end.</p>
         
         <a href="https://github.com/Kendellb/MarioKartRandomizer">MarioKartRandomizer</a>
-        <p>A simple python program written to better randomize Mario Kart 8 Deluxe.</p>
+        <p>A simple Python program written to better randomize Mario Kart 8 Deluxe.</p>
 
-        <a href="https://github.com/Kendellb/GDriveEncrpyt">GDriveEncrpyt</a>
-        <p>A simple python program that uses AES to encrypt the content of files to place on Google Drive using Google Drive API and built in python Encrytption APIs. Built to implement skills learned in a Computer Security class.</p>
+        <a href="https://github.com/Kendellb/GDriveEncrypt">GDriveEncrypt</a>
+        <p>A simple Python program that uses AES to encrypt the content of files to place on Google Drive using Google Drive API and built-in Python encryption APIs. Built to implement skills learned in a Computer Security class.</p>
 
-          <a href="https://github.com/Kendellb/CodEd">CodEd</a>
+        <a href="https://github.com/Kendellb/CodEd">CodEd</a>
         <p>CodEd is a versatile platform designed for students to seamlessly complete coding assignments for their classes using an integrated online code editor. This project provides a user-friendly environment where students can work on assignments and submit their coding projects directly to their professors.</p>
-
     </section>
 
-      
-    
+    <section id="poster">
+        <h2>Poster</h2>
+        <iframe src="CookiesPoster.pdf" title="Poster PDF"></iframe>
+    </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form
-  action="https://formspree.io/f/xwkgkndz"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+        <form action="https://formspree.io/f/xwkgkndz" method="POST">
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
     </section>
 </body>
 
