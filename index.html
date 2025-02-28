@@ -1,140 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kendell Barry - Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <title>Kendell Barry - Portfolio</title>
+  <style>
+/* Colors */
+:root {
+    --base: #303446;
+    --text-color: #c6d0f5;
+    --lavender: #babbf1;
+    --blue: #8caaee;
+    --pink: #f4b8e4;
+    --overlay: #414559;
+}
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--base); /* base */
+    color: var(--text-color); /* text color */
+}
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
+header {
+    background-color: var(--overlay); /* lavender */
+    color: var(--lavender); /* Text color for header */
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
 
-        section {
-            margin: 20px;
-        }
+section {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
 
-        h2 {
-            color: #333;
-        }
+h2 {
+    color: var(--text-color); /* text color */
+}
 
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
+label {
+    display: block;
+    margin-bottom: 8px;
+}
 
-        input,
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
 
-        button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-        }
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-        }
-    </style>
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
 
+a {
+    color: var(--blue); /* Set color for all links */
+    text-decoration: none; /* Optional: Remove underline for all links */
+    font-weight: bold;
+}
+
+a:visited {
+    color: var(--pink); /* Set visited links color */
+}
+
+#projects a {
+    display: block;
+    margin: 10px 0;
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects ul li {
+    margin-bottom: 10px;
+}
+  </style>
 </head>
-
 <body>
-    <header>
-        <h1>Kendell Barry</h1>
-        <img src="/img/IMG_0642.jpg" width="100" height="100" alt="Kendell Barry">
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        Hello, I'm Kendell Barry, a passionate and detail-oriented Computer Science graduate from Duquesne University.
-My interests extend beyond the academic and professional realm; I am an enthusiast in self-hosting applications and 
-        have a strong love for continuous learning in the field of technology. I am excited about the prospect of 
-        contributing my skills and passion to the world of computer science. You can check out my resume <a href="https://github.com/Kendellb/Kendellb.github.io/blob/main/pdf/KendellBarryResume.pdf" download>here</a>.
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <a href="https://github.com/Kendellb/WebWatchTogether">WebWatchTogether</a>
-        <ul>
-            <li>Developed a P2P web app using WebRTC and JavaScript to watch real-time video with friends.</li>
-        </ul>
-        
-        <a href="https://github.com/Kendellb/MarioKartRandomizer">MarioKartRandomizer</a>
-        <p>A simple Python program written to better randomize Mario Kart 8 Deluxe.</p>
-
-        <a href="https://github.com/Kendellb/GDriveEncrypt">GDriveEncrypt</a>
-        <ul>
-            <li>Built a Python program to automate secure file transfer through Google Drive</li>
-            <li>Utilzing AES encryption and Google Drive API</li>
-        </ul>
-        <a href="https://github.com/Kendellb/CodEd">CodEd</a>
-        <ul>
-            <li>Designed and implemented an online IDE for Java coding assignments</li>
-            <li>Built using Node.js, MongoDB, JSDoc, Rollup, Xterm, and CodeMirror6</li>
-            <li>CI/CD through Github tested using jest, Postman, and Selenium</li>
-        </ul>
-        <a href="https://github.com/Kendellb/uptime">uptime</a>
-        <ul>
-            <li>Developed a lightweight uptime monitoring web application in Go.</li>
-            <li>Created an API to retrieve real-time status data of monitored websites.</li>
-            <li>Implemented best practices in writing API tests using Postman.</li>
-            <li>(CI/CD) using GitHub Actions.</li>
-        </ul>
-    </section>
-
-     <section id="poster">
-        <h2>Poster</h2>
-         <p>Poster Presentation for Tech Ethics Symposium 2023 held at Duquesene.</p>
-        <iframe src="/pdf/CookiesPoster.pdf" title="Poster PDF"></iframe>
-    </section>
-
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xwkgkndz" method="POST">
-            <label>
-                Your email:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+  <header>
+    <h1>Kendell Barry</h1><img src="/img/IMG_0642.jpg" width="100"
+    height="100" alt="Kendell Barry">
+  </header>
+  <section id="about">
+    <h2>About Me</h2>Hello, I'm Kendell Barry, a passionate and
+    detail-oriented Computer Science graduate from Duquesne
+    University. My interests extend beyond the academic and
+    professional realm; I am an enthusiast in self-hosting
+    applications and have a strong love for continuous learning in
+    the field of technology. I am excited about the prospect of
+    contributing my skills and passion to the world of computer
+    science. You can check out my resume <a href=
+    "https://github.com/Kendellb/Kendellb.github.io/blob/main/pdf/KendellBarryResume.pdf"
+    download="">here</a>.
+  </section>
+  <section id="projects">
+    <h2>Projects</h2><a href=
+    "https://github.com/Kendellb/WebWatchTogether">WebWatchTogether</a>
+    <ul>
+      <li>Developed a P2P web app using WebRTC and JavaScript to
+      watch real-time video with friends.</li>
+    </ul><a href=
+    "https://github.com/Kendellb/MarioKartRandomizer">MarioKartRandomizer</a>
+    <p>A simple Python program written to better randomize Mario
+    Kart 8 Deluxe.</p><a href=
+    "https://github.com/Kendellb/GDriveEncrypt">GDriveEncrypt</a>
+    <ul>
+      <li>Built a Python program to automate secure file transfer
+      through Google Drive</li>
+      <li>Utilzing AES encryption and Google Drive API</li>
+    </ul><a href="https://github.com/Kendellb/CodEd">CodEd</a>
+    <ul>
+      <li>Designed and implemented an online IDE for Java coding
+      assignments</li>
+      <li>Built using Node.js, MongoDB, JSDoc, Rollup, Xterm, and
+      CodeMirror6</li>
+      <li>CI/CD through Github tested using jest, Postman, and
+      Selenium</li>
+    </ul><a href="https://github.com/Kendellb/uptime">uptime</a>
+    <ul>
+      <li>Developed a lightweight uptime monitoring web application
+      in Go.</li>
+      <li>Created an API to retrieve real-time status data of
+      monitored websites.</li>
+      <li>Implemented best practices in writing API tests using
+      Postman.</li>
+      <li>(CI/CD) using GitHub Actions.</li>
+    </ul>
+  </section>
+  <section id="poster">
+    <h2>Poster</h2>
+    <p>Poster Presentation for Tech Ethics Symposium 2023 held at
+    Duquesene.</p><iframe src="/pdf/CookiesPoster.pdf" title=
+    "Poster PDF"></iframe>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xwkgkndz" method="post">
+      <label>Your email: <input type="email" name="email"></label>
+      <label>Your message: 
+      <textarea name="message"></textarea></label> <button type=
+      "submit">Send</button>
+    </form>
+  </section>
 </body>
-
 </html>
